@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <org.appcelerator.titanium.view.TiCompositeLayout android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p006ti.modules.titanium.p007ui.widget.listview.TiBaseListViewItem android:id="@+id/titanium_ui_list_item_content" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </org.appcelerator.titanium.view.TiCompositeLayout>
+    <ImageView android:layout_gravity="right" android:id="@+id/titanium_ui_list_item_accessoryType" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="6dp" android:scaleType="centerInside" android:adjustViewBounds="true" android:maxWidth="17dp" android:maxHeight="17dp" android:contentDescription="One of the following images: checkmark, child, or disclosure"/>
+</FrameLayout>

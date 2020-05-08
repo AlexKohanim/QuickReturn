@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1" package="com.marvelapp.project4875687" platformBuildVersionCode="23" platformBuildVersionName="6.0-2704002">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="23"/>
+    <application android:theme="@style/Theme.AppCompat.NoTitleBar.Fullscreen" android:label="quickreturn" android:icon="@drawable/appicon" android:name="QuickreturnApplication" android:debuggable="false">
+        <activity android:theme="@style/Theme.Titanium" android:label="@string/app_name" android:name=".QuickreturnActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.appcelerator.titanium.TiActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.AppCompat.Translucent" android:name="org.appcelerator.titanium.TiTranslucentActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="p006ti.modules.titanium.p007ui.android.TiPreferencesActivity" android:configChanges="screenSize"/>
+        <provider android:name="org.appcelerator.titanium.p005io.TiFileProvider" android:exported="false" android:authorities="com.marvelapp.project4875687.tifileprovider" android:grantUriPermissions="true"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+</manifest>
